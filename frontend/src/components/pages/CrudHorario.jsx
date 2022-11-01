@@ -11,8 +11,17 @@ export default class CrudHorario extends Component {
     render() {
         return (
             <Main {...headerProps}>
-                Usuário
+                <button onClick={sair}>
+                    sair
+                </button>
             </Main>
         )
     }
 } 
+
+    
+function sair(){
+ if(localStorage.estado == '1'){
+        window.location.href = '/login'
+    }
+}

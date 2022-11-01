@@ -11,7 +11,7 @@ export default props =>
             <Link to="/horarioSala">
                 <i className=" fa fa-solid fa-sharp fa-sliders"></i> Horários
             </Link>
-            <Link to="/cadastroHorario">
+            <Link to="/login">
                 <i className='fa fa-user-plus fa-solid fa-sharp'></i> Cadastrar Horario
             </Link>
        </nav>
