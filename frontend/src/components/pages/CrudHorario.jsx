@@ -23,5 +23,6 @@ export default class CrudHorario extends Component {
 function sair(){
  if(localStorage.estado == '1'){
         window.location.href = '/login'
+        localStorage.estado = 0;
     }
 }
