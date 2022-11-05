@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default props => 
     <aside className="menu-area">
-       <nav className='menu'>
+       <nav className="menu">
             <Link to="/">
                 <i clLinkssName='fa fa-home fa-solid'></i> Inicio
             </Link>

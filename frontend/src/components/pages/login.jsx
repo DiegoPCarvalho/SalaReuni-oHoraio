@@ -31,6 +31,8 @@ export default props =>
                     </div>
                 </div>
             </div>
+
+          {exato()}
     </Main>
 
 
@@ -46,14 +48,24 @@ export default props =>
             sns2: 78956
         }
        
-
         if(((usuario == db.us1) && (senha == db.sns1)) || ((usuario == db.us2) && (senha == db.sns2))){
             window.location.href = '/cadastroHorario'
             localStorage.estado = 1
         }else {
-            alert('Usuário e Senha Inválidos !!! Tente Novamente')
+            alert('Usuário e/ou Senha Inválidos !!! Tente Novamente')
         }
           
+    }
+
+    function exato() {
+        if(localStorage.estado == "1"){
+            window.location.href = '/cadastroHorario'
+        }
+        else if(localStorage.estado == "0") {
+            setInterval(() => {
+                    window.location.href = '/login';
+            }, 30000)
+        }
     }
 
 

@@ -1,19 +1,26 @@
 {
-  "posts": [
+  "Horarios": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "periodo": "Manhã",
+      "hora": "09:00",
+      "diaSemana": "Terça",
+      "solicitante": "alterado",
+      "id": 2
+    },
+    {
+      "periodo": "Manhã",
+      "hora": "08:30",
+      "diaSemana": "",
+      "solicitante": "",
+      "id": 3
+    },
+    {
+      "periodo": "Manhã",
+      "hora": "",
+      "diaSemana": "",
+      "solicitante": "",
+      "id": 4
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "solicitacao": []
 }
