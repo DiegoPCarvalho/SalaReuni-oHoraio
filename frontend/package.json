@@ -10,6 +10,7 @@
     "bootstrap": "^5.2.2",
     "font-awesome": "^4.7.0",
     "mdb-react-ui-kit": "^5.0.0",
+    "nuka-carousel": "^5.4.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",

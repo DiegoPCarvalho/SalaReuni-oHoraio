@@ -1,0 +1,25 @@
+@media(max-width: 576px){
+    .tamanho {
+        display: block;
+        padding: 30px;
+        width: 300;
+    }
+    
+    img.tt {
+        display: block;
+        width: 100px;
+        height: 300px;
+    }
+}
+
+.tamanho {
+    display: block;
+    padding: 30px;
+    width: 300;
+}
+
+img.tt {
+    display: block;
+    width: 100px;
+    height: 300px;
+}

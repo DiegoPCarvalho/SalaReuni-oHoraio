@@ -21,7 +21,7 @@ export default class CrudHorario extends Component {
     state = { ...initialState }
 
     componentWillMount(){
-        axios(baseUrl).then(resp => {
+      axios(baseUrl).then(resp => {
             this.setState({ list: resp.data })
         })
     }

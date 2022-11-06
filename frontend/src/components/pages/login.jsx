@@ -64,7 +64,7 @@ export default props =>
         else if(localStorage.estado == "0") {
             setInterval(() => {
                     window.location.href = '/login';
-            }, 30000)
+            }, 3000000)
         }
     }
 
