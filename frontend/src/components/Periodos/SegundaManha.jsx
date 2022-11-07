@@ -22,7 +22,7 @@ export default class SegundaManha extends Component {
         return (
             <div>
                 <h1>Manhã</h1>
-            <table className="table mt-4">
+            <table className="table mt-4 w-50">
                 <thead>
                     <tr>
                         <th>Hora</th>

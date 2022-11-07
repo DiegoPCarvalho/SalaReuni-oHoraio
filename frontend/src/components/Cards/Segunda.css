@@ -1,0 +1,13 @@
+@media(max-width: 576px){
+    div.segunda {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.segunda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

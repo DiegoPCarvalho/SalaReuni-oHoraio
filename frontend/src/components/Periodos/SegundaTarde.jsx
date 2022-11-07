@@ -24,7 +24,7 @@ export default class SegundaTarde extends Component {
         return (
             <div>
                 <h1>Tarde</h1>
-            <table className="table mt-4">
+            <table className="table mt-4 w-50">
                 <thead>
                     <tr>
                         <th>Hora</th>

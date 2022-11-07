@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Collapse from 'react-bootstrap/Collapse';
 import Segunda from '../Cards/Segunda';
+import './ColapseSegunda.css'
 
 function Example() {
   const [open, setOpen] = useState(false);
@@ -16,10 +17,10 @@ function Example() {
       >
         Segunda
       </Button>
-      <div style={{ minHeight: '150px' }}>
+      <div style={{ minHeight: '150px' }} className="tamSeg">
         <Collapse in={open} dimension="width">
           <div id="example-collapse-text">
-            <Card body style={{ width: '700px'}} className="mt-3 mb-3">
+            <Card body style={{ width: '500px'}} className="mt-3 mb-3">
               <Segunda />
             </Card>
           </div>
