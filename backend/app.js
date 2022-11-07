@@ -6,7 +6,7 @@ const cors = require('cors');
 
 app.use(cors());
 
-const baseUrl = 'http://192.168.1.227:7000/Horarios';
+const baseUrl = 'http://192.168.15.80:7000/Horarios';
 
 
 app.get('/SegundaManha', async(req, res) => {

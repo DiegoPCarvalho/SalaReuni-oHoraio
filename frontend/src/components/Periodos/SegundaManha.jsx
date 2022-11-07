@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
-const baseUrl = 'http://192.168.1.227:5000/SegundaManha';
+const baseUrl = 'http://192.168.15.80:5000/SegundaManha';
 
 const initialState = {
     horario: { periodo: '', hora: '', diaSemana: '', solicitante: '' },
     list: [],
 }
 
-export default class Segunda extends Component {
+export default class SegundaManha extends Component {
     
     state = { ...initialState }
 

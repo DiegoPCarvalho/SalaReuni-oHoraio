@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
-const baseUrl = 'http://192.168.1.227:5000/SegundaTarde';
+const baseUrl = 'http://192.168.15.80:5000/SegundaTarde';
 
 
 const initialState = {
@@ -9,7 +9,7 @@ const initialState = {
     list: [],
 }
 
-export default class Segunda extends Component {
+export default class SegundaTarde extends Component {
     
     state = { ...initialState }
 
@@ -23,8 +23,8 @@ export default class Segunda extends Component {
     renderTable() {
         return (
             <div>
-                <h1 className='mx-5'>Tarde</h1>
-            <table className="table mt-4 mx-5">
+                <h1>Tarde</h1>
+            <table className="table mt-4">
                 <thead>
                     <tr>
                         <th>Hora</th>

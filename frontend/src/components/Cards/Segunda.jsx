@@ -4,7 +4,7 @@ import SegundaTarde from '../Periodos/SegundaTarde';
 
 
 export default props =>
-    <div className='d-flex flex-rows justify-content-between'>
+    <div className='d-flex flex-row justify-content-between'>
         <SegundaManha />
         <SegundaTarde />
     </div>
