@@ -2,14 +2,15 @@ import React, {Component} from 'react';
 import axios from 'axios';
 
 
-const baseUrl = 'http://192.168.15.137:5000/SegundaManha';
+const baseUrl = 'http://192.168.15.137:5000/TercaTarde';
+
 
 const initialState = {
     horario: { periodo: '', hora: '', diaSemana: '', solicitante: '' },
     list: [],
 }
 
-export default class SegundaManha extends Component {
+export default class SegundaTarde extends Component {
     
     state = { ...initialState }
 
@@ -19,10 +20,11 @@ export default class SegundaManha extends Component {
         })
     }
 
+
     renderTable() {
         return (
             <div>
-                <h1>Manhã</h1>
+                <h1>Tarde</h1>
             <table className="table mt-4">
                 <thead>
                     <tr>
@@ -56,6 +58,4 @@ export default class SegundaManha extends Component {
             </div>
         )
     }
-
-    
 }

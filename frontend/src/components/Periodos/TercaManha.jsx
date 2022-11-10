@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 
 
-const baseUrl = 'http://192.168.15.137:5000/SegundaManha';
+const baseUrl = 'http://192.168.15.137:5000/TercaManha';
 
 const initialState = {
     horario: { periodo: '', hora: '', diaSemana: '', solicitante: '' },

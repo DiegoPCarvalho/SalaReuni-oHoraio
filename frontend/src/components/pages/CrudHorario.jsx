@@ -9,7 +9,7 @@ const headerProps = {
     subtitle: 'Cadastro de Horário: Incluir, Listar, Alterar, Excluir'
 }
 
-const baseUrl = 'http://192.168.15.80:7000/Horarios';
+const baseUrl = 'http://192.168.15.137:7000/Horarios';
 
 const initialState = {
     horario: { periodo: '', hora: '', diaSemana: '', solicitante: '' },

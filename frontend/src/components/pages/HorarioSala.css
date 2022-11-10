@@ -1,4 +1,62 @@
-.bll {
+@media(max-width: 576px){
+   div.pequeno{
+        display: flex;
+        flex-direction: column;
+   }
+
+   table.table {
+        width: 25%;
+    }
+
+    div.segunda {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+@media(max-width: 768px) {
+    div.pequeno{
+        display: flex;
+        flex-direction: column;
+   }
+
+   table.table {
+        width: 25%;
+    }
+    
+    div.segunda {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+
+@media(max-width: 900px) {
+    div.pequeno{
+        display: flex;
+        flex-direction: column;
+   }
+
+   table.table {
+        width: 25%;
+    }
+    
+    div.segunda {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+.bll{
     border: 5px solid black;
-    margin-top: 10px;
+}
+
+table.table {
+    width: 100%;
 }

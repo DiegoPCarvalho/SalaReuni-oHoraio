@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
-const baseUrl = 'http://192.168.15.80:5000/SegundaTarde';
+
+const baseUrl = 'http://192.168.15.137:5000/SegundaTarde';
 
 
 const initialState = {
@@ -24,7 +25,7 @@ export default class SegundaTarde extends Component {
         return (
             <div>
                 <h1>Tarde</h1>
-            <table className="table mt-4 w-50">
+            <table className="table mt-4">
                 <thead>
                     <tr>
                         <th>Hora</th>

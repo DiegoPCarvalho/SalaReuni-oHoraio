@@ -6,7 +6,7 @@ const cors = require('cors');
 
 app.use(cors());
 
-const baseUrl = 'http://192.168.15.80:7000/Horarios';
+const baseUrl = 'http://192.168.15.137:7000/Horarios';
 
 
 app.get('/SegundaManha', async(req, res) => {
@@ -54,7 +54,49 @@ app.get('/SegundaTarde', async(req, res) => {
     res.json(dadosSegTarde.dado)
 })
 
+app.get('/TercaManha', async(req, res) => {
 
+    const respTerManha = await axios(baseUrl)
+    const tabTerManha = respTerManha.data
+
+    let dadosTerManha = { dado: []}
+
+    for(let i = 0; i < tabTerManha.length; i++){
+        let dia = tabTerManha[i].diaSemana;
+        let per = tabTerManha[i].periodo;
+
+        if((dia === "Terça")&&(per === "Manhã")) {
+            dadosTerManha.dado.push({
+                hora: tabTerManha[i].hora,
+                solicitante: tabTerManha[i].solicitante
+            })
+        }
+    }
+
+    res.json(dadosTerManha.dado)
+})
+
+app.get('/TercaTarde', async(req, res) => {
+
+    const respTerTarde = await axios(baseUrl)
+    const tabTerTarde = respTerTarde.data
+
+    let dadosTerTarde = { dado: []}
+
+    for(let i = 0; i < tabTerTarde.length; i++){
+        let diaSegTarde = tabTerTarde[i].diaSemana;
+        let perSegTarde = tabTerTarde[i].periodo;
+
+        if((diaSegTarde === "Terça")&&(perSegTarde === "Tarde")) {
+            dadosTerTarde.dado.push({
+                hora: tabTerTarde[i].hora,
+                solicitante: tabTerTarde[i].solicitante
+            })
+        }
+    }
+
+    res.json(dadosTerTarde.dado)
+})
 
 app.listen(port, () =>{
     try{

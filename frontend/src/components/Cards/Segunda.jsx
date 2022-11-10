@@ -1,7 +1,7 @@
 import React from 'react';
 import SegundaManha from '../Periodos/SegundaManha';
 import SegundaTarde from '../Periodos/SegundaTarde';
-import './Segunda.css';
+import './TodosDias.css';
 
 
 
