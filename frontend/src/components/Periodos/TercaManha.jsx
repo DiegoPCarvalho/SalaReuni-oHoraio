@@ -21,10 +21,10 @@ export default class SegundaManha extends Component {
 
     renderTable() {
         return (
-            <div>
-                <h1>Manhã</h1>
+            <div className='table-responsive'>
+                <h1 className='border rounded d-flex justify-content-center bg-secondary text-light'>Manhã</h1>
             <table className="table mt-4">
-                <thead>
+                <thead className="table-dark">
                     <tr>
                         <th>Hora</th>
                         <th>Solicitante</th>
@@ -42,8 +42,8 @@ export default class SegundaManha extends Component {
         return this.state.list.map(horario => {
                 return (
                         <tr key={horario.id}>
-                            <td>{horario.hora}</td>
-                            <td>{horario.solicitante}</td>
+                            <td className='table-success'>{horario.hora}</td>
+                            <td className='table-light'>{horario.solicitante}</td>
                         </tr>
                     )
         })

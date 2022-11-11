@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 
 
+
 const baseUrl = 'http://192.168.15.137:5000/TercaTarde';
 
 
@@ -23,10 +24,10 @@ export default class SegundaTarde extends Component {
 
     renderTable() {
         return (
-            <div>
-                <h1>Tarde</h1>
+            <div className='table-responsive'>
+                <h1 className='border rounded d-flex justify-content-center bg-secondary text-light'>Tarde</h1>
             <table className="table mt-4">
-                <thead>
+                <thead className='table-dark'>
                     <tr>
                         <th>Hora</th>
                         <th>Solicitante</th>
@@ -44,8 +45,8 @@ export default class SegundaTarde extends Component {
         return this.state.list.map(horario => {
                 return (
                         <tr key={horario.id}>
-                            <td>{horario.hora}</td>
-                            <td>{horario.solicitante}</td>
+                            <td className='table-warning'>{horario.hora}</td>
+                            <td className='table-light'>{horario.solicitante}</td>
                         </tr>
                     )
         })
