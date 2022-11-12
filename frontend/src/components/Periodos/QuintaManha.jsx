@@ -7,7 +7,7 @@ const baseUrl = Url(banco);
 
 const initialState = {
     horario: { periodo: '', hora: '', diaSemana: '', solicitante: '' },
-    list: [],
+    list: []
 }
 
 export default class SegundaManha extends Component {
@@ -15,25 +15,25 @@ export default class SegundaManha extends Component {
     state = { ...initialState }
 
     async componentWillMount(){
-        const tabTerManha = await axios(baseUrl).then(resp => resp.data)
-          let dadosTerManha = { dado: []}
- 
-             for(let i = 0; i < tabTerManha.length; i++){
-                 let dia = tabTerManha[i].diaSemana;
-                 let per = tabTerManha[i].periodo;
-         
-                 if((dia === "Terça")&&(per === "Manhã")) {
-                     dadosTerManha.dado.push({
-                         hora: tabTerManha[i].hora,
-                         solicitante: tabTerManha[i].solicitante
-                     })
-                 }
-            
-        }
- 
-        return this.setState({ list: dadosTerManha.dado })
- 
-     }
+       const tabQuiManha = await axios(baseUrl).then(resp => resp.data)
+         let dadosQuiManha = { dado: []}
+
+            for(let i = 0; i < tabQuiManha.length; i++){
+                let dia = tabQuiManha[i].diaSemana;
+                let per = tabQuiManha[i].periodo;
+        
+                if((dia === "Quinta")&&(per === "Manhã")) {
+                    dadosQuiManha.dado.push({
+                        hora: tabQuiManha[i].hora,
+                        solicitante: tabQuiManha[i].solicitante
+                    })
+                }
+           
+       }
+
+       return this.setState({ list: dadosQuiManha.dado })
+
+    }
 
     renderTable() {
         return (
@@ -54,6 +54,7 @@ export default class SegundaManha extends Component {
         )
     }
 
+
     renderRows(){
         return this.state.list.map(horario => {
                 return (
@@ -64,6 +65,7 @@ export default class SegundaManha extends Component {
                     )
         })
     }
+
 
     render(){
         return (

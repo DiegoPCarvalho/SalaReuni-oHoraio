@@ -7,7 +7,7 @@ const baseUrl = Url(banco);
 
 const initialState = {
     horario: { periodo: '', hora: '', diaSemana: '', solicitante: '' },
-    list: [],
+    list: []
 }
 
 export default class SegundaManha extends Component {
@@ -15,25 +15,25 @@ export default class SegundaManha extends Component {
     state = { ...initialState }
 
     async componentWillMount(){
-        const tabTerManha = await axios(baseUrl).then(resp => resp.data)
-          let dadosTerManha = { dado: []}
- 
-             for(let i = 0; i < tabTerManha.length; i++){
-                 let dia = tabTerManha[i].diaSemana;
-                 let per = tabTerManha[i].periodo;
-         
-                 if((dia === "Terça")&&(per === "Manhã")) {
-                     dadosTerManha.dado.push({
-                         hora: tabTerManha[i].hora,
-                         solicitante: tabTerManha[i].solicitante
-                     })
-                 }
-            
-        }
- 
-        return this.setState({ list: dadosTerManha.dado })
- 
-     }
+       const tabSexManha = await axios(baseUrl).then(resp => resp.data)
+         let dadosSexManha = { dado: []}
+
+            for(let i = 0; i < tabSexManha.length; i++){
+                let dia = tabSexManha[i].diaSemana;
+                let per = tabSexManha[i].periodo;
+        
+                if((dia === "Sexta")&&(per === "Manhã")) {
+                    dadosSexManha.dado.push({
+                        hora: tabSexManha[i].hora,
+                        solicitante: tabSexManha[i].solicitante
+                    })
+                }
+           
+       }
+
+       return this.setState({ list: dadosSexManha.dado })
+
+    }
 
     renderTable() {
         return (
@@ -54,6 +54,7 @@ export default class SegundaManha extends Component {
         )
     }
 
+
     renderRows(){
         return this.state.list.map(horario => {
                 return (
@@ -64,6 +65,7 @@ export default class SegundaManha extends Component {
                     )
         })
     }
+
 
     render(){
         return (

@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import Url from './Url';
 
 
-const baseUrl = 'http://192.168.15.137:5000/SegundaTarde';
+const banco = "Horarios";
+const baseUrl = Url(banco);
 
 
 const initialState = {
@@ -14,12 +16,26 @@ export default class SegundaTarde extends Component {
     
     state = { ...initialState }
 
-    componentWillMount(){
-        axios(baseUrl).then(resp => {
-            this.setState({ list: resp.data })
-        })
-    }
-
+    async componentWillMount(){
+        const tabSegTarde = await axios(baseUrl).then(resp => resp.data)
+          let dadosSegTarde = { dado: []}
+ 
+             for(let i = 0; i < tabSegTarde.length; i++){
+                 let dia = tabSegTarde[i].diaSemana;
+                 let per = tabSegTarde[i].periodo;
+         
+                 if((dia === "Segunda")&&(per === "Tarde")) {
+                     dadosSegTarde.dado.push({
+                         hora: tabSegTarde[i].hora,
+                         solicitante: tabSegTarde[i].solicitante
+                     })
+                 }
+            
+        }
+ 
+        return this.setState({ list: dadosSegTarde.dado })
+ 
+     }
 
     renderTable() {
         return (
@@ -44,7 +60,7 @@ export default class SegundaTarde extends Component {
         return this.state.list.map(horario => {
                 return (
                         <tr key={horario.id}>
-                            <td className='table-warning'>{horario.hora}</td>
+                            <td className='table-primary'>{horario.hora}</td>
                             <td className='table-light'>{horario.solicitante}</td>
                         </tr>
                     )

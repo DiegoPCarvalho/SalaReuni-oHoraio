@@ -7,11 +7,9 @@ import Fotos from '../Cards/Fotos';
 export default props => 
     <Main icon="home" title="Inicio"
         subtitle="Sala de Reunião">
-        <div className='display-4'>
-            Bem Vindo
+        <div className='h1 d-flex justify-content-center bg-success text-light rounded'>
+            Bem Vindo 
         </div>
-        <hr />
-        <p className='mb-0'> Agendamento de Horários Sala de Reunião </p>
         <hr />
             <div>
                 <Fotos />

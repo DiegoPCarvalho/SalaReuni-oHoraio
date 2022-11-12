@@ -10,37 +10,37 @@ const initialState = {
     list: [],
 }
 
-export default class SegundaManha extends Component {
+export default class SegundaTarde extends Component {
     
     state = { ...initialState }
 
     async componentWillMount(){
-        const tabTerManha = await axios(baseUrl).then(resp => resp.data)
-          let dadosTerManha = { dado: []}
+        const tabQuaTarde = await axios(baseUrl).then(resp => resp.data)
+          let dadosQuaTarde = { dado: []}
  
-             for(let i = 0; i < tabTerManha.length; i++){
-                 let dia = tabTerManha[i].diaSemana;
-                 let per = tabTerManha[i].periodo;
+             for(let i = 0; i < tabQuaTarde.length; i++){
+                 let dia = tabQuaTarde[i].diaSemana;
+                 let per = tabQuaTarde[i].periodo;
          
-                 if((dia === "Terça")&&(per === "Manhã")) {
-                     dadosTerManha.dado.push({
-                         hora: tabTerManha[i].hora,
-                         solicitante: tabTerManha[i].solicitante
+                 if((dia === "Quarta")&&(per === "Tarde")) {
+                     dadosQuaTarde.dado.push({
+                         hora: tabQuaTarde[i].hora,
+                         solicitante: tabQuaTarde[i].solicitante
                      })
                  }
             
         }
  
-        return this.setState({ list: dadosTerManha.dado })
+        return this.setState({ list: dadosQuaTarde.dado })
  
      }
 
     renderTable() {
         return (
             <div className='table-responsive'>
-                <h1 className='border rounded d-flex justify-content-center bg-secondary text-light'>Manhã</h1>
+                <h1 className='border rounded d-flex justify-content-center bg-secondary text-light'>Tarde</h1>
             <table className="table mt-4">
-                <thead className="table-dark">
+                <thead className="table-dark"> 
                     <tr>
                         <th>Hora</th>
                         <th>Solicitante</th>
@@ -58,7 +58,7 @@ export default class SegundaManha extends Component {
         return this.state.list.map(horario => {
                 return (
                         <tr key={horario.id}>
-                            <td className='table-success'>{horario.hora}</td>
+                            <td className='table-primary'>{horario.hora}</td>
                             <td className='table-light'>{horario.solicitante}</td>
                         </tr>
                     )
@@ -72,6 +72,4 @@ export default class SegundaManha extends Component {
             </div>
         )
     }
-
-    
 }

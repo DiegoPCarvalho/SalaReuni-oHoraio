@@ -1,9 +1,8 @@
 import React from "react";
 import Main from '../template/Main';
 import './HorarioSala.css'
-// import ColapseSegunda from "../Colapses/ColapseSegunda";
-// import ColapseTerca from "../Colapses/ColapseTerca"
 import ArcDias from '../Arcodion/ArcDias';
+import Solicitacao from '../Modal/ModalSolicitar';
 
 const headerProps = {
     icon: 'sliders',
@@ -15,8 +14,8 @@ export default props =>
     <Main {...headerProps}>
         <div className="container-fluid">
             <div className="row">
-                <div className="col-12 col-md6 bll mb-3">
-                   Botão
+                <div className="col-12 col-md6 mb-3">
+                  <Solicitacao />
                 </div>
             </div>
             <div className="row">
@@ -33,7 +32,7 @@ export default props =>
     function robo() {
         setInterval(() => {
             window.location.href = '/horarioSala'
-        }, 600000);
+        }, 60000);
     }
     
 

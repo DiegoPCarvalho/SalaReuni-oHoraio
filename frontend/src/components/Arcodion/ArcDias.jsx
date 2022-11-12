@@ -1,6 +1,9 @@
 import Accordion from 'react-bootstrap/Accordion';
 import  Segunda from '../Cards/Segunda';
 import Terca from '../Cards/Terca';
+import Quarta from '../Cards/Quarta';
+import Quinta from '../Cards/Quinta';
+import Sexta from '../Cards/Sexta';
 
 function BasicExample() {
   return (
@@ -20,19 +23,19 @@ function BasicExample() {
       <Accordion.Item eventKey="2">
         <Accordion.Header>Quarta</Accordion.Header>
         <Accordion.Body>
-            Sou Quarta
+            <Quarta />
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3">
         <Accordion.Header>Quinta</Accordion.Header>
         <Accordion.Body>
-            Sou Quinta
+            <Quinta />
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="5">
         <Accordion.Header>Sexta</Accordion.Header>
         <Accordion.Body>
-            Sou Sexta
+            <Sexta />
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

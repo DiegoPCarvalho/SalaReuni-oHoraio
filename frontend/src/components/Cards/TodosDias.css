@@ -8,27 +8,16 @@
          width: 25%;
      }
  
-     div.segunda {
+     div.semana {
          display: flex;
          flex-direction: column;
          justify-content: space-around;
      }
-     
-     div.terca {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
  
  }
-.segunda {
+.semana {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.terca {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}

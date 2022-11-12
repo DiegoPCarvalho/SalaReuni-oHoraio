@@ -7,7 +7,7 @@ import './TodosDias.css';
 
 
 export default props =>
-    <div className='segunda'>
+    <div className='semana'>
         <SegundaManha />
         <SegundaTarde />
     </div>

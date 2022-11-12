@@ -1,22 +1,39 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import Url from './Url';
 
 
-const baseUrl = 'http://192.168.15.137:5000/SegundaManha';
+const banco = "Horarios";
+const baseUrl = Url(banco);
 
 const initialState = {
     horario: { periodo: '', hora: '', diaSemana: '', solicitante: '' },
-    list: [],
+    list: []
 }
 
 export default class SegundaManha extends Component {
     
     state = { ...initialState }
 
-    componentWillMount(){
-        axios(baseUrl).then(resp => {
-            this.setState({ list: resp.data })
-        })
+    async componentWillMount(){
+       const tabSegManha = await axios(baseUrl).then(resp => resp.data)
+         let dadosSegManha = { dado: []}
+
+            for(let i = 0; i < tabSegManha.length; i++){
+                let dia = tabSegManha[i].diaSemana;
+                let per = tabSegManha[i].periodo;
+        
+                if((dia === "Segunda")&&(per === "Manhã")) {
+                    dadosSegManha.dado.push({
+                        hora: tabSegManha[i].hora,
+                        solicitante: tabSegManha[i].solicitante
+                    })
+                }
+           
+       }
+
+       return this.setState({ list: dadosSegManha.dado })
+
     }
 
     renderTable() {
@@ -38,6 +55,7 @@ export default class SegundaManha extends Component {
         )
     }
 
+
     renderRows(){
         return this.state.list.map(horario => {
                 return (
@@ -48,6 +66,7 @@ export default class SegundaManha extends Component {
                     )
         })
     }
+
 
     render(){
         return (
