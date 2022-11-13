@@ -5,7 +5,7 @@ import './CrudHorario.css';
 import Url from '../Periodos/Url';
 import { confirmAlert } from "react-confirm-alert";
 import "react-confirm-alert/src/react-confirm-alert.css";
-import SolicitarAdmin from '../Modal/ModalSolicitacaoAdmin';
+import SolicitarAdmin from '../Modal/ArcodionSolicitacaoAdmin';
 
 
 const headerProps = {
