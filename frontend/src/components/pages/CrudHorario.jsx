@@ -72,12 +72,16 @@ export default class CrudHorario extends Component {
     renderForm() {
         return (
             <div className="form">
-                <div className="row my-2">
-                    <div className="col-12 d-flex justify-content-between">
-                        <SolicitarAdmin />
+                <div className="row d-flex justify-content-end">
+                    <div class="col-6 col-md-3 d-flex justify-content-end">
                         <button className='btn btn-danger' onClick={e => this.sair(e)}>
                             Sair
                         </button>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div className="col-12 d-flex justify-content-between">
+                        <SolicitarAdmin />
                     </div>
                 </div>
                 <div className="row">
@@ -173,12 +177,12 @@ export default class CrudHorario extends Component {
                     <div className="col-6 col-md-3">
                         <input type="text" name="" id="pesquisa" className='form-control' list='listaSemana' />
                         <datalist id="listaSemana">
-                                <option value="Geral"></option>
-                                <option value="Segunda"></option>
-                                <option value="Terça"></option>
-                                <option value="Quarta"></option>
-                                <option value="Quinta"></option>
-                                <option value="Sexta"></option>
+                            <option value="Geral"></option>
+                            <option value="Segunda"></option>
+                            <option value="Terça"></option>
+                            <option value="Quarta"></option>
+                            <option value="Quinta"></option>
+                            <option value="Sexta"></option>
                         </datalist>
                     </div>
                     <div className="col-6 col-md-3">
@@ -224,7 +228,7 @@ export default class CrudHorario extends Component {
                             <i className="fa fa-pencil"></i>
                         </button>
                         <button className='btn btn-danger mx-2 ui button'
-                            onClick={() => this.confirmar(horario) }>
+                            onClick={() => this.confirmar(horario)}>
                             <i className="fa fa-trash"></i>
                         </button>
                     </td>
@@ -238,35 +242,35 @@ export default class CrudHorario extends Component {
     }
 
     remove(horario) {
-            axios.delete(`${baseUrl}/${horario.id}`).then(resp => {
-                const list = this.getUpdateList(horario, false)
-                this.setState({ list })
-            })
+        axios.delete(`${baseUrl}/${horario.id}`).then(resp => {
+            const list = this.getUpdateList(horario, false)
+            this.setState({ list })
+        })
     }
 
-    confirmar(horario){
-       confirmAlert({
-        title: "Deletar",
-        message: "Deseja Realmente Deletar?",
-        buttons: [
-            {
-                label: "Sim" ,
-                className: "btn btn-danger",
-                onClick: () => this.remove(horario)
-            },
-            {
-                label: "Não",
-                className: "btn btn-secondary"
-            }
-        ]
-       })
-        
+    confirmar(horario) {
+        confirmAlert({
+            title: "Deletar",
+            message: "Deseja Realmente Deletar?",
+            buttons: [
+                {
+                    label: "Sim",
+                    className: "btn btn-danger",
+                    onClick: () => this.remove(horario)
+                },
+                {
+                    label: "Não",
+                    className: "btn btn-secondary"
+                }
+            ]
+        })
+
     }
 
     async pesquisar() {
         const pesquisa = document.getElementById("pesquisa").value;
 
-        if(pesquisa == "Geral"){
+        if (pesquisa == "Geral") {
             this.componentWillMount()
         }
         else if (pesquisa == "Segunda") {
@@ -296,7 +300,7 @@ export default class CrudHorario extends Component {
 
             for (let i = 0; i < tabTerca.length; i++) {
                 let dia = tabTerca[i].diaSemana;
-    
+
                 if (dia === "Terça") {
                     dadosTerca.dado.push({
                         id: tabTerca[i].id,

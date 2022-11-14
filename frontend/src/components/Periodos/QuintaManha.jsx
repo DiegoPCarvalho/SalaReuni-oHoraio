@@ -10,7 +10,7 @@ const initialState = {
     list: []
 }
 
-export default class SegundaManha extends Component {
+export default class QuintaManha extends Component {
     
     state = { ...initialState }
 

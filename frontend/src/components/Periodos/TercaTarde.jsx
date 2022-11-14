@@ -12,7 +12,7 @@ const initialState = {
     list: [],
 }
 
-export default class SegundaTarde extends Component {
+export default class TercaTarde extends Component {
     
     state = { ...initialState }
 
@@ -24,7 +24,7 @@ export default class SegundaTarde extends Component {
                  let dia = tabTerTarde[i].diaSemana;
                  let per = tabTerTarde[i].periodo;
          
-                 if((dia === "Segunda")&&(per === "Tarde")) {
+                 if((dia === "Terça")&&(per === "Tarde")) {
                      dadosTerTarde.dado.push({
                          hora: tabTerTarde[i].hora,
                          solicitante: tabTerTarde[i].solicitante

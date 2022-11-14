@@ -11,7 +11,7 @@ const initialState = {
     list: []
 }
 
-export default class SegundaManha extends Component {
+export default class QuartaManha extends Component {
     
     state = { ...initialState }
 

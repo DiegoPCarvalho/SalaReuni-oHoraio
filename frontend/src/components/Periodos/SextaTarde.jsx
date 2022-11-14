@@ -11,7 +11,7 @@ const initialState = {
     list: [],
 }
 
-export default class SegundaTarde extends Component {
+export default class SextaTarde extends Component {
     
     state = { ...initialState }
 

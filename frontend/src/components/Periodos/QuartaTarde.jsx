@@ -10,7 +10,7 @@ const initialState = {
     list: [],
 }
 
-export default class SegundaTarde extends Component {
+export default class QuartaTarde extends Component {
     
     state = { ...initialState }
 
