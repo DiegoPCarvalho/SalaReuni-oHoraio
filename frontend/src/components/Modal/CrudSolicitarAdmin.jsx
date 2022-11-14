@@ -9,7 +9,7 @@ const banco = "Solicitacao"
 const baseUrl = Url(banco);
 
 const initialState = {
-    horario: { periodo: '', hora: '', diaSemana: '', solicitante: '' },
+    horario: { periodo: '', de: '', ate: '', diaSemana: '', solicitante: '' },
     list: []
 }
 
@@ -53,7 +53,7 @@ export default class CrudSolicitarAdmin extends Component {
             return (
                 <tr key={horario.id}>
                     <td className='table-primary'>{horario.periodo}</td>
-                    <td>{horario.hora}</td>
+                    <td>{`${horario.de} - ${horario.ate}`}</td>
                     <td>{horario.diaSemana}</td>
                     <td>{horario.solicitante}</td>
                     <td className='tam'>

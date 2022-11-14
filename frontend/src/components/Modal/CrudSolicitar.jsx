@@ -7,7 +7,7 @@ const banco = "Solicitacao"
 const baseUrl = Url(banco);
 
 const initialState = {
-    horario: { periodo: '', hora: '', diaSemana: '', solicitante: '' },
+    horario: { periodo: '', de: '', ate: '', diaSemana: '', solicitante: '' },
     list: []
 }
 
@@ -68,15 +68,46 @@ export default class CrudSolicitacao extends Component {
                             </datalist>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="col-6 col-md-3">
                         <div className="form-group">
-                            <label>Hora: </label>
+                            <label>De: </label>
                             <input type="text" className="form-control"
-                                name="hora" list="listaHora"
-                                value={this.state.horario.hora}
+                                name="de" list="listaDe"
+                                value={this.state.horario.de}
                                 onChange={e => this.updateField(e)}
                                 placeholder="Selecione a Hora desejado ..." />
-                            <datalist id="listaHora">
+                            <datalist id="listaDe">
+                                <option value="08:00"></option>
+                                <option value="08:30"></option>
+                                <option value="09:00"></option>
+                                <option value="09:30"></option>
+                                <option value="10:00"></option>
+                                <option value="10:30"></option>
+                                <option value="11:00"></option>
+                                <option value="11:30"></option>
+                                <option value="12:00"></option>
+                                <option value="12:30"></option>
+                                <option value="13:00"></option>
+                                <option value="14:00"></option>
+                                <option value="14:30"></option>
+                                <option value="15:00"></option>
+                                <option value="15:30"></option>
+                                <option value="16:00"></option>
+                                <option value="16:30"></option>
+                                <option value="17:00"></option>
+                                <option value="17:30"></option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div className="col-6 col-md-3">
+                        <div className="form-group">
+                            <label>Até: </label>
+                            <input type="text" className="form-control"
+                                name="ate" list="listaAte"
+                                value={this.state.horario.ate}
+                                onChange={e => this.updateField(e)}
+                                placeholder="Selecione a Hora desejado ..." />
+                            <datalist id="listaAte">
                                 <option value="08:00"></option>
                                 <option value="08:30"></option>
                                 <option value="09:00"></option>
@@ -168,7 +199,7 @@ export default class CrudSolicitacao extends Component {
             return (
                 <tr key={horario.id}>
                     <td className='table-primary'>{horario.periodo}</td>
-                    <td>{horario.hora}</td>
+                    <td>{`${horario.de} - ${horario.ate}`}</td>
                     <td>{horario.diaSemana}</td>
                     <td>{horario.solicitante}</td>
                 </tr>

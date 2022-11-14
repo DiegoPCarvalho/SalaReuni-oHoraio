@@ -2,661 +2,689 @@
   "Horarios": [
     {
       "periodo": "Manhã",
-      "hora": "08:00",
+      "hora": "08:00 - 08:30",
       "diaSemana": "Segunda",
       "solicitante": "Mona - Integração",
       "id": 1
     },
     {
       "periodo": "Manhã",
-      "hora": "08:30",
+      "hora": "08:30 - 09:00",
       "diaSemana": "Segunda",
       "solicitante": "Mona - Integração",
       "id": 2
     },
     {
       "periodo": "Manhã",
-      "hora": "09:00",
+      "hora": "09:00 - 09:30",
       "diaSemana": "Segunda",
       "solicitante": "Comercial",
       "id": 3
     },
     {
       "periodo": "Manhã",
-      "hora": "09:30",
+      "hora": "09:30 - 10:00",
       "diaSemana": "Segunda",
       "solicitante": "Comercial",
       "id": 4
     },
     {
       "periodo": "Manhã",
-      "hora": "10:00",
+      "hora": "10:00 - 10:30",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 5
     },
     {
       "periodo": "Manhã",
-      "hora": "10:30",
+      "hora": "10:30 - 11:00",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 6
     },
     {
       "periodo": "Manhã",
-      "hora": "11:00",
+      "hora": "11:00 - 11:30",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 7
     },
     {
       "periodo": "Manhã",
-      "hora": "11:15",
+      "hora": "11:30 - 12:00",
       "diaSemana": "Segunda",
-      "solicitante": "Adriana",
+      "solicitante": "Adriana - Assaí",
       "id": 8
     },
     {
       "periodo": "Manhã",
-      "hora": "12:00",
+      "hora": "12:00 - 12:30",
+      "diaSemana": "Segunda",
+      "solicitante": "",
+      "id": 9
+    },
+    {
+      "periodo": "Manhã",
+      "hora": "12:30 - 13:00",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 10
     },
     {
-      "periodo": "Manhã",
-      "hora": "12:30",
+      "periodo": "Tarde",
+      "hora": "13:00 - 13:30",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 11
     },
     {
       "periodo": "Tarde",
-      "hora": "13:00",
+      "hora": "13:30 - 14:00",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 12
     },
     {
       "periodo": "Tarde",
-      "hora": "14:00",
+      "hora": "14:00 - 14:30",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 13
     },
     {
       "periodo": "Tarde",
-      "hora": "14:30",
+      "hora": "14:30 - 15:00",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 14
     },
     {
       "periodo": "Tarde",
-      "hora": "15:00",
+      "hora": "15:00 - 15:30",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 15
     },
     {
       "periodo": "Tarde",
-      "hora": "16:00",
+      "hora": "15:30 - 16:00",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 16
     },
     {
       "periodo": "Tarde",
-      "hora": "16:30",
+      "hora": "16:00 - 16:30",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 17
     },
     {
       "periodo": "Tarde",
-      "hora": "17:00",
+      "hora": "16:30 - 17:00",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 18
     },
     {
       "periodo": "Tarde",
-      "hora": "17:30",
+      "hora": "17:00 - 17:30",
       "diaSemana": "Segunda",
       "solicitante": "",
       "id": 19
     },
     {
-      "periodo": "Manhã",
-      "hora": "08:00",
-      "diaSemana": "Terça",
-      "solicitante": "Marcelo",
+      "periodo": "Tarde",
+      "hora": "17:30 - 18:00",
+      "diaSemana": "Segunda",
+      "solicitante": "",
       "id": 20
     },
     {
       "periodo": "Manhã",
-      "hora": "08:30",
+      "hora": "08:00 - 08:30",
       "diaSemana": "Terça",
       "solicitante": "Marcelo",
       "id": 21
     },
     {
       "periodo": "Manhã",
-      "hora": "09:00",
+      "hora": "08:30 - 09:00",
       "diaSemana": "Terça",
-      "solicitante": "",
+      "solicitante": "Marcelo",
       "id": 22
     },
     {
       "periodo": "Manhã",
-      "hora": "09:40",
+      "hora": "09:00 - 09:30",
+      "diaSemana": "Terça",
+      "solicitante": "",
+      "id": 23
+    },
+    {
+      "periodo": "Manhã",
+      "hora": "09:30 - 10:00",
       "diaSemana": "Terça",
       "solicitante": "Adriana - Assaí",
       "id": 24
     },
     {
       "periodo": "Manhã",
-      "hora": "10:00",
+      "hora": "10:00 - 10:30",
       "diaSemana": "Terça",
       "solicitante": "Luanda",
       "id": 25
     },
     {
       "periodo": "Manhã",
-      "hora": "10:30",
+      "hora": "10:30 - 11:00",
       "diaSemana": "Terça",
       "solicitante": "Luanda",
       "id": 26
     },
     {
       "periodo": "Manhã",
-      "hora": "11:00",
+      "hora": "11:00 - 11:30",
       "diaSemana": "Terça",
       "solicitante": "Luanda",
       "id": 27
     },
     {
       "periodo": "Manhã",
-      "hora": "11:30",
+      "hora": "11:30 - 12:00",
       "diaSemana": "Terça",
       "solicitante": "Luanda",
       "id": 28
     },
     {
       "periodo": "Manhã",
-      "hora": "12:00",
+      "hora": "12:00 - 12:30",
       "diaSemana": "Terça",
       "solicitante": "Luanda",
       "id": 29
     },
     {
       "periodo": "Manhã",
-      "hora": "12:30",
+      "hora": "12:30 - 13:00",
       "diaSemana": "Terça",
       "solicitante": "",
       "id": 30
     },
     {
       "periodo": "Tarde",
-      "hora": "13:00",
+      "hora": "13:00 - 13:30",
       "diaSemana": "Terça",
       "solicitante": "",
       "id": 31
     },
     {
       "periodo": "Tarde",
-      "hora": "14:00",
+      "hora": "13:30 - 14:00",
       "diaSemana": "Terça",
       "solicitante": "",
       "id": 32
     },
     {
       "periodo": "Tarde",
-      "hora": "14:30",
+      "hora": "14:00 - 14:30",
       "diaSemana": "Terça",
       "solicitante": "",
       "id": 33
     },
     {
-      "id": 34,
       "periodo": "Tarde",
-      "hora": "15:00",
+      "hora": "14:30 - 15:00",
       "diaSemana": "Terça",
-      "solicitante": ""
+      "solicitante": "",
+      "id": 34
     },
     {
       "periodo": "Tarde",
-      "hora": "15:30",
+      "hora": "15:00 - 15:30",
       "diaSemana": "Terça",
       "solicitante": "",
       "id": 35
     },
     {
       "periodo": "Tarde",
-      "hora": "16:00",
+      "hora": "15:30 - 16:00",
       "diaSemana": "Terça",
       "solicitante": "",
       "id": 36
     },
     {
       "periodo": "Tarde",
-      "hora": "16:30",
+      "hora": "16:00 - 16:30",
       "diaSemana": "Terça",
       "solicitante": "",
       "id": 37
     },
     {
       "periodo": "Tarde",
-      "hora": "17:00",
+      "hora": "16:30 - 17:00",
       "diaSemana": "Terça",
       "solicitante": "",
       "id": 38
     },
     {
       "periodo": "Tarde",
-      "hora": "17:30",
+      "hora": "17:00 - 17:30",
       "diaSemana": "Terça",
       "solicitante": "",
       "id": 39
     },
     {
-      "periodo": "Manhã",
-      "hora": "08:00",
-      "diaSemana": "Quarta",
+      "periodo": "Tarde",
+      "hora": "17:30 - 18:00",
+      "diaSemana": "Terça",
       "solicitante": "",
       "id": 40
     },
     {
       "periodo": "Manhã",
-      "hora": "08:30",
+      "hora": "08:00 - 08:30",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 41
     },
     {
       "periodo": "Manhã",
-      "hora": "09:00",
+      "hora": "08:30 - 09:00",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 42
     },
     {
       "periodo": "Manhã",
-      "hora": "09:40",
+      "hora": "09:00 - 09:30",
+      "diaSemana": "Quarta",
+      "solicitante": "",
+      "id": 43
+    },
+    {
+      "periodo": "Manhã",
+      "hora": "09:30 - 10:00",
       "diaSemana": "Quarta",
       "solicitante": "Adriana - Assaí",
       "id": 44
     },
     {
       "periodo": "Manhã",
-      "hora": "10:00",
+      "hora": "10:00 - 10:30",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 45
     },
     {
       "periodo": "Manhã",
-      "hora": "10:30",
+      "hora": "10:30 - 11:00",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 46
     },
     {
       "periodo": "Manhã",
-      "hora": "11:00",
+      "hora": "11:00 - 11:30",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 47
     },
     {
       "periodo": "Manhã",
-      "hora": "11:30",
+      "hora": "11:30 - 12:00",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 48
     },
     {
       "periodo": "Manhã",
-      "hora": "12:00",
+      "hora": "12:00 - 12:30",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 49
     },
     {
       "periodo": "Manhã",
-      "hora": "12:30",
+      "hora": "12:30 - 13:00",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 50
     },
     {
       "periodo": "Tarde",
-      "hora": "13:00",
+      "hora": "13:00 - 13:30",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 51
     },
     {
       "periodo": "Tarde",
-      "hora": "14:00",
+      "hora": "13:30 - 14:00",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 52
     },
     {
       "periodo": "Tarde",
-      "hora": "14:30",
+      "hora": "14:00 - 14:30",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 53
     },
     {
       "periodo": "Tarde",
-      "hora": "15:00",
+      "hora": "14:30 - 15:00",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 54
     },
     {
       "periodo": "Tarde",
-      "hora": "15:30",
+      "hora": "15:00 - 15:30",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 55
     },
     {
       "periodo": "Tarde",
-      "hora": "16:00",
+      "hora": "15:30 - 16:00",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 56
     },
     {
       "periodo": "Tarde",
-      "hora": "16:30",
+      "hora": "16:00 - 16:30",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 57
     },
     {
       "periodo": "Tarde",
-      "hora": "17:00",
+      "hora": "16:30 - 17:00",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 58
     },
     {
       "periodo": "Tarde",
-      "hora": "17:30",
+      "hora": "17:00 - 17:30",
       "diaSemana": "Quarta",
       "solicitante": "",
       "id": 59
     },
     {
-      "periodo": "Manhã",
-      "hora": "08:00",
-      "diaSemana": "Quinta",
-      "solicitante": "Marcelo",
+      "periodo": "Tarde",
+      "hora": "17:30 - 18:00",
+      "diaSemana": "Quarta",
+      "solicitante": "",
       "id": 60
     },
     {
       "periodo": "Manhã",
-      "hora": "08:30",
+      "hora": "08:00 - 08:30",
       "diaSemana": "Quinta",
       "solicitante": "Marcelo",
       "id": 61
     },
     {
       "periodo": "Manhã",
-      "hora": "09:00",
+      "hora": "08:30 - 09:00",
       "diaSemana": "Quinta",
-      "solicitante": "",
+      "solicitante": "Marcelo",
       "id": 62
     },
     {
       "periodo": "Manhã",
-      "hora": "09:30",
+      "hora": "09:00 - 09:30",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 63
     },
     {
       "periodo": "Manhã",
-      "hora": "10:00",
+      "hora": "09:30 - 10:00",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 64
     },
     {
       "periodo": "Manhã",
-      "hora": "10:30",
+      "hora": "10:00 - 10:30",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 65
     },
     {
       "periodo": "Manhã",
-      "hora": "11:00",
+      "hora": "10:30 - 11:00",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 66
     },
     {
       "periodo": "Manhã",
-      "hora": "11:15",
+      "hora": "11:00 - 11:30",
       "diaSemana": "Quinta",
-      "solicitante": "Adriana - Assaí",
+      "solicitante": "",
       "id": 67
     },
     {
       "periodo": "Manhã",
-      "hora": "12:00",
+      "hora": "11:30 - 12:00",
+      "diaSemana": "Quinta",
+      "solicitante": "Adriana - Assaí",
+      "id": 68
+    },
+    {
+      "periodo": "Manhã",
+      "hora": "12:00 - 12:30",
+      "diaSemana": "Quinta",
+      "solicitante": "",
+      "id": 69
+    },
+    {
+      "periodo": "Manhã",
+      "hora": "12:30 - 13:00",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 70
     },
     {
-      "periodo": "Manhã",
-      "hora": "12:30",
+      "periodo": "Tarde",
+      "hora": "13:00 - 13:30",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 71
     },
     {
       "periodo": "Tarde",
-      "hora": "13:00",
+      "hora": "13:30 - 14:00",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 72
     },
     {
       "periodo": "Tarde",
-      "hora": "14:00",
+      "hora": "14:00 - 14:30",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 73
     },
     {
       "periodo": "Tarde",
-      "hora": "14:30",
+      "hora": "14:30 - 15:00",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 74
     },
     {
       "periodo": "Tarde",
-      "hora": "15:00",
+      "hora": "15:00 - 15:30",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 75
     },
     {
       "periodo": "Tarde",
-      "hora": "15:30",
+      "hora": "15:30 - 16:00",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 76
     },
     {
       "periodo": "Tarde",
-      "hora": "16:00",
+      "hora": "16:00 - 16:30",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 77
     },
     {
       "periodo": "Tarde",
-      "hora": "16:30",
+      "hora": "16:30 - 17:00",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 78
     },
     {
       "periodo": "Tarde",
-      "hora": "17:00",
+      "hora": "17:00 - 17:30",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 79
     },
     {
       "periodo": "Tarde",
-      "hora": "17:30",
+      "hora": "17:30 - 18:00",
       "diaSemana": "Quinta",
       "solicitante": "",
       "id": 80
     },
     {
       "periodo": "Manhã",
-      "hora": "08:00",
+      "hora": "08:00 - 08:30",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 81
     },
     {
       "periodo": "Manhã",
-      "hora": "08:30",
+      "hora": "08:30 - 09:00",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 82
     },
     {
-      "id": 83,
       "periodo": "Manhã",
-      "hora": "09:00",
+      "hora": "09:00 - 09:30",
       "diaSemana": "Sexta",
-      "solicitante": "Comercial"
-    },
-    {
-      "id": 84,
-      "periodo": "Manhã",
-      "hora": "09:30",
-      "diaSemana": "Sexta",
-      "solicitante": "Adriana - Assaí"
+      "solicitante": "Comercial",
+      "id": 83
     },
     {
       "periodo": "Manhã",
-      "hora": "10:00",
+      "hora": "09:30 - 10:00",
+      "diaSemana": "Sexta",
+      "solicitante": "Adriana - Assaí",
+      "id": 84
+    },
+    {
+      "periodo": "Manhã",
+      "hora": "10:30 - 11:00",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 85
     },
     {
       "periodo": "Manhã",
-      "hora": "10:30",
+      "hora": "11:00 - 11:30",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 86
     },
     {
       "periodo": "Manhã",
-      "hora": "11:00",
+      "hora": "11:30 - 12:00",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 87
     },
     {
-      "periodo": "Tarde",
-      "hora": "11:30",
+      "periodo": "Manhã",
+      "hora": "12:00 - 12:30",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 88
     },
     {
       "periodo": "Manhã",
-      "hora": "12:00",
+      "hora": "12:30 - 13:00",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 89
     },
     {
-      "periodo": "Manhã",
-      "hora": "12:30",
+      "periodo": "Tarde",
+      "hora": "13:00 - 13:30",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 90
     },
     {
       "periodo": "Tarde",
-      "hora": "13:00",
+      "hora": "13:30 - 14:00",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 91
     },
     {
       "periodo": "Tarde",
-      "hora": "14:00",
+      "hora": "14:00 - 14:30",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 92
     },
     {
       "periodo": "Tarde",
-      "hora": "14:30",
+      "hora": "14:30 - 15:00",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 93
     },
     {
       "periodo": "Tarde",
-      "hora": "15:00",
+      "hora": "15:00 - 15:30",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 94
     },
     {
       "periodo": "Tarde",
-      "hora": "15:30",
+      "hora": "15:30 - 16:00",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 95
     },
     {
       "periodo": "Tarde",
-      "hora": "16:00",
+      "hora": "16:00 - 16:30",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 96
     },
     {
       "periodo": "Tarde",
-      "hora": "16:30",
+      "hora": "17:00 - 17:30",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 97
     },
     {
       "periodo": "Tarde",
-      "hora": "17:00",
+      "hora": "17:30 - 18:00",
       "diaSemana": "Sexta",
       "solicitante": "",
       "id": 98
-    },
-    {
-      "periodo": "Tarde",
-      "hora": "17:30",
-      "diaSemana": "Sexta",
-      "solicitante": "",
-      "id": 99
     }
   ],
   "Solicitacao": []
